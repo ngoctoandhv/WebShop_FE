@@ -257,7 +257,7 @@ main .row-main .right .products .item .info p {
   margin-top: 10px;
   font-weight: 600;
 }
-
+/* banner */
 main .banner {
   margin-top: 30px;
   width: 100%;
@@ -301,7 +301,7 @@ main .banner .row-banner .right button {
   font-family: inherit;
   cursor: pointer;
 }
-
+/* news */
 main .row-news {
   display: flex;
   justify-content: space-between;
@@ -382,7 +382,7 @@ main .row-news .item .right div {
 main .row-news .item .right div span {
   font-style: italic;
 }
-
+/* footer */
 footer {
   background: #f5f5f5;
   border-top: 1px solid #cccccc;
@@ -424,12 +424,6 @@ footer .author {
   .container {
     width: 97%;
   }
-  header .row-header .icon ul li:visited ul {
-    top: 100%;
-    opacity: 1;
-    visibility: inherit;
-  }
-
   main .row-main .left {
     width: 30%;
   }
@@ -460,17 +454,43 @@ footer .author {
   }
 }
 @media only screen and (max-width: 375px) {
-  /* main .row-main {
-    flex-direction: column-reverse;
-  } 
-  
+  .container {
+    width: 95%;
+  }
+  main .row-main {
+    flex-direction: column;
+  }
+  main .row-main .left {
+    width: 100%;
+  }
+  main .row-main .right {
+    width: 100%;
+  }
+  main .row-main .right .products .item {
+    width: 48%;
+  }
+  main .banner .row-banner {
+    flex-direction: column;
+  }
+  main .banner .row-banner .left {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  main .banner .row-banner .right input {
+    width: 70%;
+  }
+  main .news .item {
+    width: 100%;
+  }
+  main .news .item .right img {
+    height: 200px;
+  }
   footer .row-footer {
     flex-wrap: wrap;
   }
   footer .row-footer .item {
     width: 48%;
   }
-  header .row-header .icon ul li .cart {
-    display: none;
-  }  */
 }
